@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HapDJv7aLPo=",
+  "dgSpecHash": "fQ0UUX+p/9I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CL2~PC25\\Downloads\\C-ACTIVITY-GENESE-main\\C-ACTIVITY-GENESE-main\\ActivityC#_genese\\ActivityC#_genese.csproj",
+  "projectFilePath": "C:\\Users\\CL2~PC25\\Pictures\\shawngeneseDB\\sql-integration-with-cSharp-main\\ActivityC#_genese\\ActivityC#_genese.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CL2~PC25\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\CL2~PC25\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",

@@ -46,7 +46,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label1.Location = new Point(163, 61);
+            label1.Location = new Point(175, 56);
             label1.Name = "label1";
             label1.Size = new Size(347, 28);
             label1.TabIndex = 0;
@@ -107,6 +107,7 @@
             txtFirstName.Font = new Font("Segoe UI", 13F);
             txtFirstName.Location = new Point(203, 130);
             txtFirstName.Name = "txtFirstName";
+            txtFirstName.PlaceholderText = "first name";
             txtFirstName.Size = new Size(298, 31);
             txtFirstName.TabIndex = 6;
             // 
@@ -115,6 +116,7 @@
             txtLastName.Font = new Font("Segoe UI", 13F);
             txtLastName.Location = new Point(203, 183);
             txtLastName.Name = "txtLastName";
+            txtLastName.PlaceholderText = "last name";
             txtLastName.Size = new Size(298, 31);
             txtLastName.TabIndex = 7;
             // 
@@ -122,6 +124,7 @@
             // 
             cmbCourse.Font = new Font("Segoe UI", 13F);
             cmbCourse.FormattingEnabled = true;
+            cmbCourse.Items.AddRange(new object[] { "ACT", "BSOA", "HM" });
             cmbCourse.Location = new Point(203, 243);
             cmbCourse.Name = "cmbCourse";
             cmbCourse.Size = new Size(298, 31);
@@ -131,6 +134,7 @@
             // 
             cmbSection.Font = new Font("Segoe UI", 13F);
             cmbSection.FormattingEnabled = true;
+            cmbSection.Items.AddRange(new object[] { "1A", "1B", "1C", "1D", "1E" });
             cmbSection.Location = new Point(203, 298);
             cmbSection.Name = "cmbSection";
             cmbSection.Size = new Size(298, 31);
@@ -141,6 +145,7 @@
             txtAge.Font = new Font("Segoe UI", 13F);
             txtAge.Location = new Point(203, 348);
             txtAge.Name = "txtAge";
+            txtAge.PlaceholderText = "age";
             txtAge.Size = new Size(298, 31);
             txtAge.TabIndex = 10;
             // 
@@ -153,6 +158,7 @@
             btnSaveRecord.TabIndex = 11;
             btnSaveRecord.Text = "SAVE RECORD";
             btnSaveRecord.UseVisualStyleBackColor = true;
+            btnSaveRecord.Click += btnSaveRecord_Click;
             // 
             // RegisterStudent
             // 

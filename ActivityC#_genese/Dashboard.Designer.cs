@@ -34,25 +34,29 @@
             // 
             // btnRegisterStudent
             // 
-            btnRegisterStudent.BackColor = SystemColors.GradientActiveCaption;
+            btnRegisterStudent.BackColor = Color.SteelBlue;
             btnRegisterStudent.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegisterStudent.ForeColor = SystemColors.ControlLightLight;
             btnRegisterStudent.Location = new Point(97, 185);
             btnRegisterStudent.Name = "btnRegisterStudent";
             btnRegisterStudent.Size = new Size(298, 81);
             btnRegisterStudent.TabIndex = 0;
             btnRegisterStudent.Text = "REGISTER STUDENT";
             btnRegisterStudent.UseVisualStyleBackColor = false;
+            btnRegisterStudent.Click += btnRegisterStudent_Click;
             // 
             // btnStudentList
             // 
-            btnStudentList.BackColor = SystemColors.GradientActiveCaption;
+            btnStudentList.BackColor = Color.SteelBlue;
             btnStudentList.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnStudentList.ForeColor = SystemColors.ControlLightLight;
             btnStudentList.Location = new Point(421, 185);
             btnStudentList.Name = "btnStudentList";
             btnStudentList.Size = new Size(298, 81);
             btnStudentList.TabIndex = 1;
             btnStudentList.Text = "STUDENT LIST";
             btnStudentList.UseVisualStyleBackColor = false;
+            btnStudentList.Click += btnStudentList_Click;
             // 
             // Dashboard
             // 

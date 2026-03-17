@@ -16,5 +16,18 @@ namespace ActivityC__genese
         {
             InitializeComponent();
         }
+
+        private void btnRegisterStudent_Click(object sender, EventArgs e)
+        {
+            RegisterStudent registerStudent = new RegisterStudent();
+            registerStudent.ShowDialog();
+
+        }
+
+        private void btnStudentList_Click(object sender, EventArgs e)
+        {
+            StudentList studentList = new StudentList();
+            studentList.ShowDialog();
+        }
     }
 }

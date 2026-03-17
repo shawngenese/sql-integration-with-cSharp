@@ -32,128 +32,136 @@
             txtSearch = new TextBox();
             btnSearch = new Button();
             btnRefresh = new Button();
-            dataGridView1 = new DataGridView();
-            button3 = new Button();
-            textBox3 = new TextBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
+            dgvStudents = new DataGridView();
+            btnSaveRecord = new Button();
+            txtAge = new TextBox();
+            cmbSection = new ComboBox();
+            cmbCourse = new ComboBox();
+            txtLastName = new TextBox();
+            txtFirstName = new TextBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label7 = new Label();
-            button4 = new Button();
+            btnDeleteRecord = new Button();
             txtID = new TextBox();
             label8 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label1.Location = new Point(21, 41);
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label1.Location = new Point(153, 30);
             label1.Name = "label1";
-            label1.Size = new Size(234, 28);
+            label1.Size = new Size(315, 37);
             label1.TabIndex = 0;
             label1.Text = "STUDENT MASTER LIST";
             // 
             // txtSearch
             // 
             txtSearch.Font = new Font("Segoe UI", 13F);
-            txtSearch.Location = new Point(21, 87);
+            txtSearch.Location = new Point(21, 95);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(224, 31);
+            txtSearch.PlaceholderText = "Search";
+            txtSearch.Size = new Size(279, 31);
             txtSearch.TabIndex = 1;
             // 
             // btnSearch
             // 
             btnSearch.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            btnSearch.Location = new Point(251, 87);
+            btnSearch.Location = new Point(319, 95);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(202, 31);
             btnSearch.TabIndex = 2;
             btnSearch.Text = "SEARCH";
             btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // btnRefresh
             // 
             btnRefresh.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            btnRefresh.Location = new Point(459, 87);
+            btnRefresh.Location = new Point(527, 95);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(105, 31);
+            btnRefresh.Size = new Size(114, 31);
             btnRefresh.TabIndex = 3;
             btnRefresh.Text = "REFRESH";
             btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
-            // dataGridView1
+            // dgvStudents
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 144);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(543, 498);
-            dataGridView1.TabIndex = 4;
+            dgvStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStudents.Location = new Point(21, 144);
+            dgvStudents.Name = "dgvStudents";
+            dgvStudents.Size = new Size(620, 469);
+            dgvStudents.TabIndex = 4;
+            dgvStudents.CellClick += dgvStudents_CellClick;
             // 
-            // button3
+            // btnSaveRecord
             // 
-            button3.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button3.Location = new Point(765, 478);
-            button3.Name = "button3";
-            button3.Size = new Size(298, 41);
-            button3.TabIndex = 23;
-            button3.Text = "SAVE RECORD";
-            button3.UseVisualStyleBackColor = true;
+            btnSaveRecord.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            btnSaveRecord.Location = new Point(811, 456);
+            btnSaveRecord.Name = "btnSaveRecord";
+            btnSaveRecord.Size = new Size(298, 41);
+            btnSaveRecord.TabIndex = 23;
+            btnSaveRecord.Text = "SAVE RECORD";
+            btnSaveRecord.UseVisualStyleBackColor = true;
+            btnSaveRecord.Click += btnSaveRecord_Click;
             // 
-            // textBox3
+            // txtAge
             // 
-            textBox3.Font = new Font("Segoe UI", 13F);
-            textBox3.Location = new Point(765, 423);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(298, 31);
-            textBox3.TabIndex = 22;
+            txtAge.Font = new Font("Segoe UI", 13F);
+            txtAge.Location = new Point(811, 401);
+            txtAge.Name = "txtAge";
+            txtAge.PlaceholderText = "age";
+            txtAge.Size = new Size(298, 31);
+            txtAge.TabIndex = 22;
             // 
-            // comboBox2
+            // cmbSection
             // 
-            comboBox2.Font = new Font("Segoe UI", 13F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(765, 373);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(298, 31);
-            comboBox2.TabIndex = 21;
+            cmbSection.Font = new Font("Segoe UI", 13F);
+            cmbSection.FormattingEnabled = true;
+            cmbSection.Location = new Point(811, 351);
+            cmbSection.Name = "cmbSection";
+            cmbSection.Size = new Size(298, 31);
+            cmbSection.TabIndex = 21;
             // 
-            // comboBox1
+            // cmbCourse
             // 
-            comboBox1.Font = new Font("Segoe UI", 13F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(765, 318);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(298, 31);
-            comboBox1.TabIndex = 20;
+            cmbCourse.Font = new Font("Segoe UI", 13F);
+            cmbCourse.FormattingEnabled = true;
+            cmbCourse.Location = new Point(811, 296);
+            cmbCourse.Name = "cmbCourse";
+            cmbCourse.Size = new Size(298, 31);
+            cmbCourse.TabIndex = 20;
             // 
-            // textBox2
+            // txtLastName
             // 
-            textBox2.Font = new Font("Segoe UI", 13F);
-            textBox2.Location = new Point(765, 258);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(298, 31);
-            textBox2.TabIndex = 19;
+            txtLastName.Font = new Font("Segoe UI", 13F);
+            txtLastName.Location = new Point(811, 236);
+            txtLastName.Name = "txtLastName";
+            txtLastName.PlaceholderText = "last name";
+            txtLastName.Size = new Size(298, 31);
+            txtLastName.TabIndex = 19;
             // 
-            // textBox4
+            // txtFirstName
             // 
-            textBox4.Font = new Font("Segoe UI", 13F);
-            textBox4.Location = new Point(765, 205);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(298, 31);
-            textBox4.TabIndex = 18;
+            txtFirstName.Font = new Font("Segoe UI", 13F);
+            txtFirstName.Location = new Point(811, 183);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.PlaceholderText = "first name";
+            txtFirstName.Size = new Size(298, 31);
+            txtFirstName.TabIndex = 18;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label6.Location = new Point(679, 429);
+            label6.Location = new Point(725, 407);
             label6.Name = "label6";
             label6.Size = new Size(51, 25);
             label6.TabIndex = 17;
@@ -163,7 +171,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label5.Location = new Point(655, 373);
+            label5.Location = new Point(701, 351);
             label5.Name = "label5";
             label5.Size = new Size(80, 25);
             label5.TabIndex = 16;
@@ -173,7 +181,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label4.Location = new Point(660, 318);
+            label4.Location = new Point(706, 296);
             label4.Name = "label4";
             label4.Size = new Size(75, 25);
             label4.TabIndex = 15;
@@ -183,7 +191,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label3.Location = new Point(629, 264);
+            label3.Location = new Point(675, 242);
             label3.Name = "label3";
             label3.Size = new Size(106, 25);
             label3.TabIndex = 14;
@@ -193,7 +201,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label2.Location = new Point(627, 211);
+            label2.Location = new Point(673, 189);
             label2.Name = "label2";
             label2.Size = new Size(108, 25);
             label2.TabIndex = 13;
@@ -203,27 +211,30 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label7.Location = new Point(730, 95);
+            label7.Location = new Point(776, 73);
             label7.Name = "label7";
             label7.Size = new Size(333, 28);
             label7.TabIndex = 12;
             label7.Text = "UPDATE STUDENT INFORMATION";
             // 
-            // button4
+            // btnDeleteRecord
             // 
-            button4.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            button4.Location = new Point(765, 525);
-            button4.Name = "button4";
-            button4.Size = new Size(298, 41);
-            button4.TabIndex = 24;
-            button4.Text = "DELETE RECORD";
-            button4.UseVisualStyleBackColor = true;
+            btnDeleteRecord.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            btnDeleteRecord.Location = new Point(811, 503);
+            btnDeleteRecord.Name = "btnDeleteRecord";
+            btnDeleteRecord.Size = new Size(298, 41);
+            btnDeleteRecord.TabIndex = 24;
+            btnDeleteRecord.Text = "DELETE RECORD";
+            btnDeleteRecord.UseVisualStyleBackColor = true;
+            btnDeleteRecord.Click += btnDeleteRecord_Click;
             // 
             // txtID
             // 
+            txtID.Enabled = false;
             txtID.Font = new Font("Segoe UI", 13F);
-            txtID.Location = new Point(765, 153);
+            txtID.Location = new Point(811, 131);
             txtID.Name = "txtID";
+            txtID.PlaceholderText = "ID";
             txtID.Size = new Size(298, 31);
             txtID.TabIndex = 25;
             // 
@@ -231,7 +242,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label8.Location = new Point(694, 156);
+            label8.Location = new Point(740, 134);
             label8.Name = "label8";
             label8.Size = new Size(36, 25);
             label8.TabIndex = 26;
@@ -241,30 +252,31 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1115, 665);
+            ClientSize = new Size(1154, 665);
             Controls.Add(label8);
             Controls.Add(txtID);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(textBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox4);
+            Controls.Add(btnDeleteRecord);
+            Controls.Add(btnSaveRecord);
+            Controls.Add(txtAge);
+            Controls.Add(cmbSection);
+            Controls.Add(cmbCourse);
+            Controls.Add(txtLastName);
+            Controls.Add(txtFirstName);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label7);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvStudents);
             Controls.Add(btnRefresh);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
             Controls.Add(label1);
             Name = "StudentList";
             Text = "StudentList";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += StudentList_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -275,20 +287,20 @@
         private TextBox txtSearch;
         private Button btnSearch;
         private Button btnRefresh;
-        private DataGridView dataGridView1;
-        private Button button3;
-        private TextBox textBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
-        private TextBox textBox4;
+        private DataGridView dgvStudents;
+        private Button btnSaveRecord;
+        private TextBox txtAge;
+        private ComboBox cmbSection;
+        private ComboBox cmbCourse;
+        private TextBox txtLastName;
+        private TextBox txtFirstName;
         private Label label6;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label7;
-        private Button button4;
+        private Button btnDeleteRecord;
         private TextBox txtID;
         private Label label8;
     }

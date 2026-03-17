@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CL2~PC25\\Downloads\\C-ACTIVITY-GENESE-main\\C-ACTIVITY-GENESE-main\\ActivityC#_genese\\ActivityC#_genese.csproj": {}
+    "C:\\Users\\CL2~PC25\\Pictures\\shawngeneseDB\\sql-integration-with-cSharp-main\\ActivityC#_genese\\ActivityC#_genese.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CL2~PC25\\Downloads\\C-ACTIVITY-GENESE-main\\C-ACTIVITY-GENESE-main\\ActivityC#_genese\\ActivityC#_genese.csproj": {
+    "C:\\Users\\CL2~PC25\\Pictures\\shawngeneseDB\\sql-integration-with-cSharp-main\\ActivityC#_genese\\ActivityC#_genese.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CL2~PC25\\Downloads\\C-ACTIVITY-GENESE-main\\C-ACTIVITY-GENESE-main\\ActivityC#_genese\\ActivityC#_genese.csproj",
+        "projectUniqueName": "C:\\Users\\CL2~PC25\\Pictures\\shawngeneseDB\\sql-integration-with-cSharp-main\\ActivityC#_genese\\ActivityC#_genese.csproj",
         "projectName": "ActivityC#_genese",
-        "projectPath": "C:\\Users\\CL2~PC25\\Downloads\\C-ACTIVITY-GENESE-main\\C-ACTIVITY-GENESE-main\\ActivityC#_genese\\ActivityC#_genese.csproj",
+        "projectPath": "C:\\Users\\CL2~PC25\\Pictures\\shawngeneseDB\\sql-integration-with-cSharp-main\\ActivityC#_genese\\ActivityC#_genese.csproj",
         "packagesPath": "C:\\Users\\CL2~PC25\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CL2~PC25\\Downloads\\C-ACTIVITY-GENESE-main\\C-ACTIVITY-GENESE-main\\ActivityC#_genese\\obj\\",
+        "outputPath": "C:\\Users\\CL2~PC25\\Pictures\\shawngeneseDB\\sql-integration-with-cSharp-main\\ActivityC#_genese\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
